@@ -5,7 +5,8 @@ plugins {
 }
 
 repositories {
-    mavenCentral()
+    mavenCentral() // open source
+    //nexis internal to ford
 }
 
 dependencies {
@@ -16,10 +17,10 @@ dependencies {
 }
 
 test {
-    useJUnitPlatform()
+    useJUnitPlatform() // Test Harness
 }
 
-bootRun.environment([
+bootRun.environment([ // to run locally on the developers machine
         "WELCOME_MESSAGE": "hello",
 ])
 
